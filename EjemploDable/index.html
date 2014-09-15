@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo de uso de Dable.js</title>
+    <link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet">
+</head>
+<body>
+    <div id="TableDable">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Cédula</th>
+                    <th>Edad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>María</td>
+                    <td>Pérez</td>
+                    <td>8-765-234</td>
+                    <td>37</td>
+                </tr>
+                <tr>
+                    <td>Juan</td>
+                    <td>Gómez</td>
+                    <td>2-479-139</td>
+                    <td>56</td>
+                </tr>
+                <tr>
+                    <td>Pedro</td>
+                    <td>Lo</td>
+                    <td>4-665-712</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <td>Susana</td>
+                    <td>Torres</td>
+                    <td>8-989-110</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>Luis</td>
+                    <td>Ferro</td>
+                    <td>5-009-864</td>
+                    <td>65</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="Scripts/Dable.js"></script>
+    <script>
+        var dable = new Dable("TableDable");
+        dable.style = 'jqueryui';
+        dable.BuildAll("TableDable");
+    </script>
+</body>
+</html>
